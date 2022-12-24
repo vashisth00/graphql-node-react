@@ -23,3 +23,43 @@
 //     address
 //   }
 // }
+
+
+// Get a list of users
+
+// query {
+//   users {
+//     id
+//     name
+//     avatar
+//     email
+//     address
+//   }
+// }
+// Get a single user by ID
+
+// query {
+//   user(id: 1) {
+//     id
+//     name
+//     avatar
+//     email
+//     address
+//   }
+// }
+// Search users by name
+
+// query {
+//   users(name: "Alice") {
+//     id
+//     name
+//     avatar
+//     email
+//     address
+//   }
+// }
+// Get the count of users
+
+// query {
+//   usersCount
+// }
