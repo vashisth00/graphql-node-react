@@ -3,11 +3,12 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import axios from 'axios';
+import cors from 'cors';
 import { makeExecutableSchema } from "@graphql-tools/schema";
 
 const app = express();
 const API_URL = 'https://608b7a57737e470017b74d29.mockapi.io/api/v1';
-
+app.use(cors());
 class UserAPI {
   async getUsers() {
     const { data } = await axios.get(`${API_URL}/users`);

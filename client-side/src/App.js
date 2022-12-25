@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import UsersList from '../../client-side/src/components/UserList';
+import UsersList from './components/UserList';
+
 
 function App() {
   return (
-<>
-  hiii
-</>
+    <div className="App">
+     <UsersList />
+    </div>
   );
 }
 
