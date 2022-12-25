@@ -1,10 +1,27 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 25px;
+}
+
+li {
+    border: 1px solid;
+    float: left;
+    flex-direction: column;
+    column-gap: 12px;
+    display: flex;
+    width: 600px;
+    padding: 19px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
